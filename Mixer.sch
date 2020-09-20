@@ -668,10 +668,6 @@ Wire Wire Line
 Wire Wire Line
 	2200 1650 1050 1650
 Wire Wire Line
-	1050 1550 1200 1550
-Wire Wire Line
-	1200 1550 1200 2050
-Wire Wire Line
 	1200 2050 1400 2050
 $Comp
 L Device:R R7
@@ -875,10 +871,7 @@ Wire Wire Line
 	2300 2950 2300 3450
 Wire Wire Line
 	2300 3450 2400 3450
-Wire Wire Line
-	1200 1350 1200 1550
 Connection ~ 1200 1350
-Connection ~ 1200 1550
 Wire Wire Line
 	1200 2050 1200 2250
 Connection ~ 1200 2050
@@ -941,12 +934,17 @@ Connection ~ 3200 2050
 Wire Wire Line
 	5300 2850 5500 2850
 Wire Wire Line
-	3600 3400 -1100 3400
-Wire Wire Line
-	-1100 3400 -1100 8700
-Wire Wire Line
 	6100 2750 6450 2750
 Connection ~ 6450 2750
 Wire Wire Line
 	6450 2750 6450 3250
+Wire Wire Line
+	1200 1350 1200 1550
+Wire Wire Line
+	1050 1550 1200 1550
+Connection ~ 1200 1550
+Wire Wire Line
+	1200 1550 1200 2050
+Text Label 1550 5150 0    50   ~ 0
+GND
 $EndSCHEMATC
