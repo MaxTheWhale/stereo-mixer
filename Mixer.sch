@@ -117,10 +117,10 @@ Connection ~ 4800 1650
 Wire Wire Line
 	4800 1650 4950 1650
 $Comp
-L Device:CP C4
+L Device:CP C5
 U 1 1 5F4B5672
 P 3600 1750
-F 0 "C4" V 3345 1750 50  0000 C CNN
+F 0 "C5" V 3345 1750 50  0000 C CNN
 F 1 "10u" V 3436 1750 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm" H 3638 1600 50  0001 C CNN
 F 3 "~" H 3600 1750 50  0001 C CNN
@@ -137,10 +137,10 @@ Wire Wire Line
 	4100 1750 3950 1750
 Connection ~ 3950 1750
 $Comp
-L Device:CP C5
+L Device:CP C6
 U 1 1 5F4BCA07
 P 3600 2950
-F 0 "C5" V 3345 2950 50  0000 C CNN
+F 0 "C6" V 3345 2950 50  0000 C CNN
 F 1 "10u" V 3436 2950 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm" H 3638 2800 50  0001 C CNN
 F 3 "~" H 3600 2950 50  0001 C CNN
@@ -187,17 +187,6 @@ Wire Wire Line
 	4100 1550 4000 1550
 Wire Wire Line
 	4000 1550 4000 1300
-$Comp
-L Device:R_POT_Dual RV5
-U 1 1 5F4C70AA
-P 6550 2150
-F 0 "RV5" V 6504 1963 50  0000 R CNN
-F 1 "100k" V 6595 1963 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Dual_Horizontal" H 6800 2075 50  0001 C CNN
-F 3 "~" H 6800 2075 50  0001 C CNN
-	1    6550 2150
-	0    1    1    0   
-$EndComp
 Connection ~ 5400 1650
 Wire Wire Line
 	5400 1650 5500 1650
@@ -259,58 +248,18 @@ Wire Wire Line
 	2050 1000 2050 850 
 Wire Wire Line
 	3300 1750 3450 1750
-Wire Wire Line
-	6650 1900 6650 1750
-Wire Wire Line
-	6650 1750 6450 1750
-Wire Wire Line
-	6650 2400 6650 2250
-Wire Wire Line
-	6650 2250 6450 2250
-Wire Wire Line
-	6450 1750 5400 1750
-Connection ~ 6450 1750
-Wire Wire Line
-	5400 1750 5400 1650
-Wire Wire Line
-	6450 2250 5300 2250
-Wire Wire Line
-	5300 2250 5300 2850
-Connection ~ 6450 2250
 Connection ~ 5300 2850
-Wire Wire Line
-	6450 2050 6750 2050
-Wire Wire Line
-	6750 2050 6750 1550
-Wire Wire Line
-	6100 1550 6750 1550
-Wire Wire Line
-	6450 2550 6450 2750
 $Comp
-L Device:CP C6
+L Device:CP C7
 U 1 1 5F4B8CC6
 P 7050 1550
-F 0 "C6" V 6795 1550 50  0000 C CNN
+F 0 "C7" V 6795 1550 50  0000 C CNN
 F 1 "10u" V 6886 1550 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm" H 7088 1400 50  0001 C CNN
 F 3 "~" H 7050 1550 50  0001 C CNN
 	1    7050 1550
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:CP C7
-U 1 1 5F4B9B94
-P 7050 3250
-F 0 "C7" V 6795 3250 50  0000 C CNN
-F 1 "10u" V 6886 3250 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm" H 7088 3100 50  0001 C CNN
-F 3 "~" H 7050 3250 50  0001 C CNN
-	1    7050 3250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6750 1550 6900 1550
-Connection ~ 6750 1550
 Wire Wire Line
 	6450 3250 6900 3250
 $Comp
@@ -407,7 +356,6 @@ Wire Wire Line
 	1500 4200 1450 4200
 Wire Wire Line
 	1950 4200 1900 4200
-Connection ~ 2250 4200
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5F6453BE
@@ -462,10 +410,10 @@ $EndComp
 Connection ~ 3600 4900
 Connection ~ 3600 4200
 $Comp
-L Device:C C3
+L Device:C C4
 U 1 1 5F512172
 P 4000 4550
-F 0 "C3" H 4115 4596 50  0000 L CNN
+F 0 "C4" H 4115 4596 50  0000 L CNN
 F 1 "100n" H 4115 4505 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 4038 4400 50  0001 C CNN
 F 3 "~" H 4000 4550 50  0001 C CNN
@@ -494,16 +442,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3750 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 4900 2800 4900
-Connection ~ 2250 4900
+	2350 4700 2350 4900
 Wire Wire Line
-	2250 4700 2250 4900
+	2250 4200 2350 4200
 Wire Wire Line
-	1550 4900 2250 4900
-Wire Wire Line
-	2250 4200 3100 4200
-Wire Wire Line
-	2250 4200 2250 4400
+	2350 4200 2350 4400
 Connection ~ 2800 4900
 Wire Wire Line
 	2800 4850 2800 4900
@@ -521,8 +464,6 @@ Text GLabel 2950 4500 1    50   Input ~ 0
 VREF
 Wire Wire Line
 	3100 4600 3100 4550
-Wire Wire Line
-	1550 4400 1550 4900
 Wire Wire Line
 	1550 4900 1550 5150
 Connection ~ 1550 4900
@@ -551,10 +492,10 @@ F 3 "~" H 3100 4350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:CP C2
+L Device:CP C3
 U 1 1 5F4E9910
 P 2800 4700
-F 0 "C2" V 2545 4700 50  0000 C CNN
+F 0 "C3" V 2545 4700 50  0000 C CNN
 F 1 "10u" V 2636 4700 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm" H 2838 4550 50  0001 C CNN
 F 3 "~" H 2800 4700 50  0001 C CNN
@@ -562,14 +503,14 @@ F 3 "~" H 2800 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C1
+L Device:CP C2
 U 1 1 5F4DC898
-P 2250 4550
-F 0 "C1" V 1995 4550 50  0000 C CNN
-F 1 "10u" V 2086 4550 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm" H 2288 4400 50  0001 C CNN
-F 3 "~" H 2250 4550 50  0001 C CNN
-	1    2250 4550
+P 2350 4550
+F 0 "C2" V 2095 4550 50  0000 C CNN
+F 1 "10u" V 2186 4550 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm" H 2388 4400 50  0001 C CNN
+F 3 "~" H 2350 4550 50  0001 C CNN
+	1    2350 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -934,8 +875,7 @@ Connection ~ 3200 2050
 Wire Wire Line
 	5300 2850 5500 2850
 Wire Wire Line
-	6100 2750 6450 2750
-Connection ~ 6450 2750
+	6100 2750 6300 2750
 Wire Wire Line
 	6450 2750 6450 3250
 Wire Wire Line
@@ -947,4 +887,87 @@ Wire Wire Line
 	1200 1550 1200 2050
 Text Label 1550 5150 0    50   ~ 0
 GND
+$Comp
+L Device:CP C1
+U 1 1 5F685EF5
+P 1900 4750
+F 0 "C1" H 2018 4796 50  0000 L CNN
+F 1 "220u" H 2018 4705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1938 4600 50  0001 C CNN
+F 3 "~" H 1900 4750 50  0001 C CNN
+	1    1900 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4400 1550 4900
+Connection ~ 1900 4200
+Connection ~ 2350 4200
+Wire Wire Line
+	2350 4200 3100 4200
+Connection ~ 2350 4900
+Wire Wire Line
+	2350 4900 2800 4900
+Connection ~ 1900 4900
+Wire Wire Line
+	1900 4900 2350 4900
+Wire Wire Line
+	1550 4900 1900 4900
+Wire Wire Line
+	1900 4200 1900 4600
+$Comp
+L Device:CP C8
+U 1 1 5F4B9B94
+P 7050 3250
+F 0 "C8" V 6795 3250 50  0000 C CNN
+F 1 "10u" V 6886 3250 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_Tantal_D4.5mm_P5.00mm" H 7088 3100 50  0001 C CNN
+F 3 "~" H 7050 3250 50  0001 C CNN
+	1    7050 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 2550 6650 2550
+Wire Wire Line
+	6650 2200 5300 2200
+Wire Wire Line
+	5300 2200 5300 2850
+Wire Wire Line
+	6450 2250 6300 2250
+Wire Wire Line
+	6300 2250 6300 2750
+Connection ~ 6300 2750
+Wire Wire Line
+	6300 2750 6450 2750
+Wire Wire Line
+	6650 2200 6650 2400
+Wire Wire Line
+	6650 2550 6650 2400
+Connection ~ 6650 2400
+$Comp
+L Device:R_POT_Dual RV5
+U 1 1 5F4C70AA
+P 6550 2150
+F 0 "RV5" V 6504 1963 50  0000 R CNN
+F 1 "100k" V 6595 1963 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Dual_Horizontal" H 6800 2075 50  0001 C CNN
+F 3 "~" H 6800 2075 50  0001 C CNN
+	1    6550 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 1550 6450 1550
+Wire Wire Line
+	6450 1750 6450 1550
+Connection ~ 6450 1550
+Wire Wire Line
+	6450 1550 6900 1550
+Wire Wire Line
+	6650 1900 6650 2050
+Wire Wire Line
+	6650 2050 6450 2050
+Wire Wire Line
+	5400 2050 6450 2050
+Wire Wire Line
+	5400 1650 5400 2050
+Connection ~ 6450 2050
 $EndSCHEMATC
